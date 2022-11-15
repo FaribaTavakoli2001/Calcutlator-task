@@ -1,5 +1,5 @@
 .history-container {
-  background-color: #fafafa;
+  background-color: #fafafa15;
   width: 20%;
   max-width: 400px;
   height: 100vh;
@@ -7,9 +7,52 @@
 
 .history-item {
   height: 20px;
-  border-radius: 6px; 
-  box-shadow: 0 0 4px gray;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(128, 128, 128, 0.575);
   margin-bottom: 10px;
   background-color: white;
   padding: 4px;
+}
+
+.h1 {
+  text-align: center;
+  padding: 23px;
+  background-color: skyblue;
+  color: rgb(255, 255, 255);
+}
+#clear {
+  width: 150px;
+  border: 3px solid gray;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: rgb(238, 255, 0);
+}
+
+.formstyle {
+  width: 150px;
+  height: 235px;
+  margin: auto;
+  border: 3px solid skyblue;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.input {
+  width: 200px;
+  background-color: rgba(19, 241, 137, 0.767);
+  color: rgb(5, 4, 4);
+  border: 10px solid gray;
+  border-radius: 5px;
+  padding: 26px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#calc {
+  width: 100px;
+  background-color: rgb(250, 241, 110);
+  border: 5px solid rgb(250, 241, 110);
+  border-radius: 3px;
+  padding: 20px;
+  margin: auto;
 }

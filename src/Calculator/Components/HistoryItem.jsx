@@ -1,7 +1,6 @@
 import React from "react";
 
 const HistoryItem = ({ formula, onClick }) => {
-
   const handleOnClick = () => {
     onClick(formula);
   };

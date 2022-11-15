@@ -12,11 +12,7 @@ export default class History extends Component {
     return (
       <div className="history-container">
         {calculates.map((c, index) => (
-          <HistoryItem
-            key={index}
-            onClick={handleOnItemClicked}
-            formula={c}
-          />
+          <HistoryItem key={index} onClick={handleOnItemClicked} formula={c} />
         ))}
       </div>
     );
