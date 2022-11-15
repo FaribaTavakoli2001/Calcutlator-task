@@ -1,6 +1,6 @@
 import "./App.css";
 import Calculator from "./Calculator/Calculator";
-import History from "./Calculator/Componetes/History";
+import History from "./Calculator/Components/History";
 
 function App() {
   return (
