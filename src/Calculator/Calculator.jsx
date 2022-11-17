@@ -5,9 +5,7 @@ class Calculator extends Component {
     Calculator: "Hi",
   };
 
-  handleOnClick = () => {
-    console.log("ok");
-  };
+
 
   handleButton = (value) => {
     document.getElementById("calc").value += value;
@@ -16,8 +14,7 @@ class Calculator extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleOnClick}>Ok</button>
-
+    
         <div className="formstyle">
           <form name="form1">
             <input id="calc" type="text" name="answer" /> <br />
