@@ -5,7 +5,8 @@ import History from "./Calculator/Components/History";
 function App() {
   return (
     <div>
-      <Calculator title="alaki" />
+      <Calculator title="alaki" 
+      />
       <History
         calculates={[
           "2+3=5",

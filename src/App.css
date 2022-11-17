@@ -3,6 +3,7 @@
   width: 20%;
   max-width: 400px;
   height: 100vh;
+  margin-top: 30px;
 }
 
 .history-item {
@@ -31,10 +32,12 @@
 .formstyle {
   width: 150px;
   height: 235px;
-  margin: auto;
+  margin-left: 20px;
   border: 3px solid skyblue;
   border-radius: 5px;
   padding: 20px;
+  margin: auto;
+
 }
 
 .input {

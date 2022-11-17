@@ -2,17 +2,22 @@ import React, { Component } from "react";
 
 class Calculator extends Component {
   state = {
-    Calculator: "salam",
+    Calculator: "Hi",
   };
 
   handleOnClick = () => {
-    console.log("clicked");
+    console.log("ok");
+  };
+
+  handleButton = (value) => {
+    document.getElementById("calc").value += value;
   };
 
   render() {
     return (
       <div>
         <button onClick={this.handleOnClick}>Ok</button>
+
         <div className="formstyle">
           <form name="form1">
             <input id="calc" type="text" name="answer" /> <br />
@@ -20,131 +25,131 @@ class Calculator extends Component {
             <input
               type="button"
               value="1"
-              onclick="form1.answer.value += '1' "
+              onClick={() => this.handleButton("1")}
             />
             <input
               type="button"
               value="2"
-              onclick="form1.answer.value += '2' "
+              onClick={() => this.handleButton("2")}
             />
             <input
               type="button"
               value="3"
-              onclick="form1.answer.value += '3' "
+              onClick={() => this.handleButton("3")}
             />
             <input
               type="button"
               value="+"
-              onclick="form1.answer.value += '+' "
+              onClick={() => this.handleButton("+")}
             />
             <input
               type="button"
               value="("
-              onclick="form1.answer.value += '(' "
+              onClick={() => this.handleButton("(")}
             />
             <input
               type="button"
               value="sin"
-              onclick="form1.answer.value += 'sin' "
+              onClick={() => this.handleButton("sin")}
             />
             <br />
             <input
               type="button"
               value="4"
-              onclick="form1.answer.value += '4' "
+              onClick={() => this.handleButton("4")}
             />
             <input
               type="button"
               value="5"
-              onclick="form1.answer.value += '5' "
+              onClick={() => this.handleButton("5")}
             />
             <input
               type="button"
               value="6"
-              onclick="form1.answer.value += '6' "
+              onClick={() => this.handleButton("6")}
             />
             <input
               type="button"
               value="-"
-              onclick="form1.answer.value += '-' "
+              onClick={() => this.handleButton("-")}
             />
             <input
               type="button"
               value=")"
-              onclick="form1.answer.value += ')' "
+              onClick={() => this.handleButton(")")}
             />
             <input
               type="button"
               value="cos"
-              onclick="form1.answer.value += 'cos' "
+              onClick={() => this.handleButton("cos")}
             />
             <br />
             <input
               type="button"
               value="7"
-              onclick="form1.answer.value += '7' "
+              onClick={() => this.handleButton("7")}
             />
             <input
               type="button"
               value="8"
-              onclick="form1.answer.value += '8' "
+              onClick={() => this.handleButton("8")}
             />
             <input
               type="button"
               value="9"
-              onclick="form1.answer.value += '9' "
+              onClick={() => this.handleButton("9")}
             />
             <input
               type="button"
               value="*"
-              onclick="form1.answer.value += '*' "
+              onClick={() => this.handleButton("*")}
             />
             <input
               type="button"
               value="^"
-              onclick="form1.answer.value += '^' "
+              onClick={() => this.handleButton("^")}
             />
             <input
               type="button"
               value="tan"
-              onclick="form1.answer.value += 'tan' "
+              onClick={() => this.handleButton("tan")}
             />
-            <br />
+            <br/>
             <input
               type="button"
               value="."
-              onclick="form1.answer.value += '.' "
+              onClick={() => this.handleButton(".")}
             />
             <input
               type="button"
               value="0"
-              onclick="form1.answer.value += '0' "
+              onClick={() => this.handleButton("0")}
             />
             <input
               type="button"
               value="/"
-              onclick="form1.answer.value += '/' "
+              onClick={() => this.handleButton("/")}
             />
             <input
               type="button"
               value="="
-              onclick="form1.answer.value = eval(form1.answer.value) "
+              onClick={() => this.handleButton("=")}
             />
             <input
               type="button"
               value="log"
-              onclick="form1.answer.value += 'log' "
+              onClick={() => this.handleButton("log")}
             />
             <input
               type="button"
-              value="  "
-              onclick="form1.answer.value += ' ' "
+              value="R"
+              onClick={() => this.handleButton("R")}
             />
             <br />
             <input
               type="button"
               value="C"
-              onclick="form1.answer.value = ' ' "
+              onClick={() => this.handleButton("C")}
               id="clear"
             />
             <br />
