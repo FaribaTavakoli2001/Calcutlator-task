@@ -1,3 +1,7 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
 .history-container {
   background-color: #fafafa15;
   width: 20%;
@@ -37,7 +41,6 @@
   border-radius: 5px;
   padding: 20px;
   margin: auto;
-
 }
 
 .input {

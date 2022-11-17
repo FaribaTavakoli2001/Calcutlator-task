@@ -4,7 +4,7 @@ import History from "./Calculator/Components/History";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Calculator title="alaki" 
       />
       <History
