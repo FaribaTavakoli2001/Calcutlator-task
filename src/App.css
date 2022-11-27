@@ -24,6 +24,8 @@
 padding-top: 2%;
 padding-right: 2%;
   background-color: rgb(191, 241, 224);
+  font-style:unset;
+
 }
 
 .history-container {
