@@ -5,7 +5,7 @@ export default class History extends Component {
   render() {
     const { calculates } = this.props;
 
-    const handleOnClice=() => {
+    const handleOnClick=() => {
       console.log("Delete")
     }
 
@@ -16,15 +16,15 @@ export default class History extends Component {
     return (
       <div className="history-container">
         <div className="space">
-        <h4>history of compoting</h4>
-        <button className="deldete" onClick={this.handleOnClice}>Delete</button>
+        <button className="delete" onClick={this.handleOnClice}>پاک کردن</button>
+        <h4 >تاریخچه محاسبات</h4>
         </div>
         
 
         {calculates.map((c, index) => (
           <HistoryItem key={index} onClick={handleOnItemClicked} formula={c} />
         ))}
-        
+      
       </div>
     );
   }

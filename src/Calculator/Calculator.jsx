@@ -5,8 +5,7 @@ class Calculator extends Component {
     Calculator: "Hi",
   };
 
-
-
+  
   handleButton = (value) => {
     document.getElementById("calc").value += value;
   };
@@ -16,11 +15,11 @@ class Calculator extends Component {
       <div>
     
         <div className="formstyle">
-          <form name="form1">
+          <form className="form1">
             <input id="calc" type="text" name="answer" /> <br />
             <br />
             <input
-              type="button"
+            type="button"
               value="1"
               onClick={() => this.handleButton("1")}
             />
@@ -141,13 +140,6 @@ class Calculator extends Component {
               type="button"
               value="R"
               onClick={() => this.handleButton("R")}
-            />
-            <br />
-            <input
-              type="button"
-              value="C"
-              onClick={() => this.handleButton("C")}
-              id="clear"
             />
             <br />
           </form>
