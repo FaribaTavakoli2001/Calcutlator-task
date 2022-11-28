@@ -1,14 +1,21 @@
+import { calculateNewValue } from "@testing-library/user-event/dist/utils";
 import React, { Component } from "react";
 
 class Calculator extends Component {
   state = {
     Calculator: "Hi",
   };
-
   
+
   handleButton = (value) => {
     document.getElementById("calc").value += value;
   };
+
+  handleCalculator= () => {
+ 
+  }
+
+
 
   render() {
     return (
@@ -112,6 +119,7 @@ class Calculator extends Component {
             />
             <br/>
             <input
+            id="dot"
               type="button"
               value="."
               onClick={() => this.handleButton(".")}

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
+
 class Bar extends Component {
   bar = () => {
-    console.log("whta is this");
+    console.log("what is this");
   };
 
   render() {
@@ -12,6 +13,8 @@ class Bar extends Component {
     </div>
     )
   }
-}
+};
+
+
 
 export default Bar;
