@@ -18,7 +18,7 @@
   color: rgb(207, 53, 53);
   height:40px;
 }
-.cow{
+.NoHistory{
 color: rgb(207,53,53);
 text-align: center;
 }
@@ -51,13 +51,7 @@ padding-right: 2%;
   padding: 4px;
 }
 
-.h1 {
-  text-align: center;
-  padding: 23px;
-  background-color: skyblue;
-  color: rgb(255, 255, 255);
 
-}
 
 .formstyle {
   width: 340px;
@@ -81,6 +75,7 @@ input {
   padding: 10px;
   margin: 2px;
   font-size: 15px;
+  
 }
 
 #calc {

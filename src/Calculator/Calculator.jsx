@@ -1,32 +1,45 @@
 import { calculateNewValue } from "@testing-library/user-event/dist/utils";
 import React, { Component } from "react";
 
+
 class Calculator extends Component {
   state = {
     Calculator: "Hi",
+    calcText: "",
   };
-  
 
   handleButton = (value) => {
-    document.getElementById("calc").value += value;
+    console.log("clicked", value);
+    const calcText = this.state.calcText + value;
+    this.setState({ ...this.state, calcText });
+    console.log(this.state, calcText);
+    // document.getElementById("calc").value += value;
   };
 
-  handleCalculator= () => {
- 
-  }
+  handleCalculator = (value) => {
+    console.log("handled");
+  };
 
-
+  handleChange = ({ target }) => { 
+    // this.setState({ ...this.state, calcText: target.value });
+  };
 
   render() {
     return (
       <div>
-    
         <div className="formstyle">
           <form className="form1">
-            <input id="calc" type="text" name="answer" /> <br />
-            <br />
             <input
-            type="button"
+              id="calc"
+              type="text"
+              name="answer"
+              value={this.state.calcText}
+              onChange={this.handleChange}
+            />
+            <br />
+            <br/>
+            <input
+              type="button"
               value="1"
               onClick={() => this.handleButton("1")}
             />
@@ -117,9 +130,9 @@ class Calculator extends Component {
               value="tan"
               onClick={() => this.handleButton("tan")}
             />
-            <br/>
+            <br />
             <input
-            id="dot"
+              id="dot"
               type="button"
               value="."
               onClick={() => this.handleButton(".")}
