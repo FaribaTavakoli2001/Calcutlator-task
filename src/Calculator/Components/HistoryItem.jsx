@@ -18,4 +18,4 @@ const HistoryItem = ({ formula, onClick }) => {
   );
 };
 
-export default HistoryItem;
+export default HistoryItem; 

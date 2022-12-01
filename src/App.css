@@ -11,26 +11,44 @@
   /* background-color: rgba(194, 207, 204, 0.877); */
   justify-content: space-between;
   display: flex;
-
 }
 
-.delete{
+.delete {
   color: rgb(207, 53, 53);
-  height:40px;
+  height: 40px;
 }
-.NoHistory{
-color: rgb(207,53,53);
-text-align: center;
+.NoHistory {
+  color: rgb(207, 53, 53);
+  text-align: center;
 }
 
-.bar{
+.bar {
   height: 50px;
-  text-align: right;
-padding-top: 2%;
-padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-right: 1%;
   background-color: rgb(191, 241, 224);
-  font-style:unset;
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
   
+}
+
+.icon {
+  background-color: #d8eb4f;
+  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 40px;
+  transition: 0.2s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  width: 92px;
+  padding: auto;
 }
 
 .history-container {
@@ -38,30 +56,28 @@ padding-right: 2%;
   width: 35%;
   max-width: 300px;
   height: 100vh;
-  margin-top: 30px;
+  margin-top: 2px;
   justify-content: space-around;
 }
 
 .history-item {
-  height: 20px;
-  border-radius: 6px;
+  height: 40px;
+  border-radius: 1px;
   box-shadow: 0 0 4px rgba(128, 128, 128, 0.575);
   margin-bottom: 10px;
   background-color: white;
   padding: 4px;
 }
 
-
-
 .formstyle {
   width: 340px;
-  height: 300px;
+  height: 350px;
   margin-left: 20px;
   border: 3px solid skyblue;
   border-radius: 5px;
   padding: 20px;
   margin: auto;
-  margin-top: 30%;
+  margin-top: 7%;
   background-color: skyblue;
 }
 
@@ -75,7 +91,6 @@ input {
   padding: 10px;
   margin: 2px;
   font-size: 15px;
-  
 }
 
 #calc {
@@ -86,4 +101,11 @@ input {
   border-radius: 3px;
   padding: 20px;
   margin: auto;
+}
+
+.clear{
+
+background-color: rgb(250,241,110);
+width: 320px;
+
 }

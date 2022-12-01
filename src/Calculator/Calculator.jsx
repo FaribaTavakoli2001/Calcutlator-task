@@ -162,6 +162,12 @@ class Calculator extends Component {
               value="R"
               onClick={() => this.handleButton("R")}
             />
+            <input
+            className="clear"
+              type="button"
+              value="clear"
+              onClick={() => this.handleButton("C")}
+            />
             <br />
           </form>
         </div>
