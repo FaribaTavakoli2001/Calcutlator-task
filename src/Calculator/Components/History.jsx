@@ -22,7 +22,7 @@ export default class History extends Component {
       <div className="history-container">
         <div className="space">
         <h4 className="delete" onClick={this.handleOnClick}>پاک کردن</h4>
-        <h4 >تاریخچه محاسبات</h4>
+        <h5 >تاریخچه محاسبات</h5>
         </div>
         
         
@@ -31,7 +31,7 @@ export default class History extends Component {
         {calculates.map((c, index) => (
           <HistoryItem key={index} onClick={handleOnItemClicked} formula={c} />
         ))}
-        <h4 className="NoHistory">تاریخچه ای وجود ندارد</h4>
+        <h5 className="NoHistory">تاریخچه ای وجود ندارد</h5>
       
       </div>
     );
