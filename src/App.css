@@ -38,21 +38,8 @@
   font-size: large;
   
 }
-.theme{
-  background-color: #d8eb4f;
-  border-radius: 30px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  height: 40px;
-  transition: 0.2s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-  transition-property: all;
-  width: 92px;
-  padding: auto;
+.Switch{
+
 }
 
 .history-container {
