@@ -8,7 +8,7 @@ export default class History extends Component {
    };
    
   render() {
-    const { calculates } = this.props;
+    const { calculates  , handleDeleteItem} = this.props;
 
    
 
@@ -21,8 +21,8 @@ export default class History extends Component {
     return (
       <div className="history-container">
         <div className="space">
-        <h4 className="delete" onClick={this.handleOnClick}>پاک کردن</h4>
-        <h5 >تاریخچه محاسبات</h5>
+        <h4 className="delete" onClick={handleDeleteItem}>پاک کردن</h4>
+        <h5 className="name">تاریخچه محاسبات</h5>
         </div>
         
         
@@ -31,8 +31,8 @@ export default class History extends Component {
         {calculates.map((c, index) => (
           <HistoryItem key={index} onClick={handleOnItemClicked} formula={c} />
         ))}
-        <h5 className="NoHistory">تاریخچه ای وجود ندارد</h5>
-      
+
+        {calculates.length === 0 ? <h5 className="NoHistory">تاریخچه ای وجود ندارد</h5> : ""}
       </div>
     );
   }
