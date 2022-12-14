@@ -32,7 +32,7 @@ export default class History extends Component {
           <HistoryItem key={index} onClick={handleOnItemClicked} formula={c} />
         ))}
 
-        {calculates.length === 0 ? <h5 className="NoHistory">تاریخچه ای وجود ندارد</h5> : ""}
+        {calculates.length === 0 ? <h5 className="NoHistory">تاریخچه ای وجود ندارد</h5>  : ""}
       </div>
     );
   }

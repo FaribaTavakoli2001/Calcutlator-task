@@ -26,7 +26,7 @@ class Calculator extends Component {
  
   handleDeleteItem = (c) => {
     let historyText = this.state.historyText ;
-    const index = historyText.findIndex((item) => item ===c );
+    const index = historyText.findIndex((item) => item === c );
     historyText.splice(index,1);
     this.setState({historyText});
   };
@@ -178,7 +178,6 @@ class Calculator extends Component {
                 className="clear"
                 type="button"
                 value="clear"
-                k
                 onClick={() => this.setState({ calcText: "" })}
               />
               <br />

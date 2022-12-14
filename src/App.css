@@ -21,12 +21,12 @@
   font-style: normal;
   height: 40px;
   cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .NoHistory {
   color: rgb(207, 53, 53);
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .bar {
@@ -39,19 +39,87 @@
   display: flex;
   justify-content: space-around;
   font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.name{
-  font-size:x-large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.name {
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
   
 }
 
-
-.Switch{
-  display: flex;
+.switch input {
+  
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
+
+.slider {
+  
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(23, 22, 24, 0.781);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color:white;
+  background-image: url("./Calculator/Components/image/moon\ image.png");
+  background-position: left;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #020202;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+  background-image: url("./Calculator/Components/image/sun\ images.png");
+  background-color:white;
+  background-position: right;
+  
+  
+  
+}
+
+.slider.round:before {
+  border-radius: 50%;
+ 
+}
+
 
 
 .history-container {
@@ -84,7 +152,6 @@
   background-color: skyblue;
 }
 
-
 input {
   width: 50px;
   height: 50px;
@@ -107,9 +174,7 @@ input {
   margin: auto;
 }
 
-.clear{
-
-background-color: rgb(250,241,110);
-width: 320px;
-
+.clear {
+  background-color: rgb(250, 241, 110);
+  width: 320px;
 }
