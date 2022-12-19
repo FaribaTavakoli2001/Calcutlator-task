@@ -8,7 +8,7 @@ export default class History extends Component {
    };
    
   render() {
-    const { calculates  , handleDeleteItem} = this.props;
+    const { calculates  , handleDelete} = this.props;
 
    
 
@@ -21,7 +21,7 @@ export default class History extends Component {
     return (
       <div className="history-container">
         <div className="space">
-        <h4 className="delete" onClick={handleDeleteItem}>پاک کردن</h4>
+        <h4 className="delete" onClick={handleDelete}>پاک کردن</h4>
         <h5 className="name">تاریخچه محاسبات</h5>
         </div>
         
