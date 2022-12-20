@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class Calculator extends Component {
   state = {
     Calculator: "Hi",
@@ -14,6 +13,7 @@ class Calculator extends Component {
     console.log(this.state, calcText);
   };
 
+<<<<<<< HEAD
   // handleDeleteItem = (c) => {
   //   let historyText = this.state.historyText;
   //   const index = historyText.findIndex((item) => item === c);
@@ -21,6 +21,25 @@ class Calculator extends Component {
   //   this.setState({ historyText });
   // };
 
+=======
+  handleCalculator = () => {
+    let historyText = this.state.historyText;
+    historyText.push(this.state.calcText);
+    this.setState({ calcText: "" });
+  };
+
+  handleDelete = () => {
+    this.setState({ historyText: [] });
+  };
+
+  // handleDeleteItem = (c) => {
+  //   let historyText = this.state.historyText ;
+  //   const index = historyText.findIndex((item) => item === c );
+  //   historyText.splice(index,1);
+  //   this.setState({historyText});
+  // };
+
+>>>>>>> 9a68dd705b9c6221f17737d6da928e863994ddad
   handleChange = ({ target }) => {
     // this.setState({ ...this.state, calcText: target.value });
   };
@@ -38,6 +57,7 @@ class Calculator extends Component {
 
     return (
       <div>
+<<<<<<< HEAD
         <div className="formstyle">
           <div className="form1">
             <input
@@ -128,6 +148,108 @@ class Calculator extends Component {
               C
             </button>
           </div>
+=======
+        <div className="container">
+          <div className="formstyle">
+            <div className="form1">
+              <input
+                id="calc"
+                type="text"
+                name="answer"
+                value={this.state.calcText}
+                onChange={this.handleChange}
+              />
+
+              <button value="1" onClick={() => this.handleButton("1")}>
+                1
+              </button>
+              <button value="2" onClick={() => this.handleButton("2")}>
+                2
+              </button>
+              <button value="3" onClick={() => this.handleButton("3")}>
+                3
+              </button>
+              <button value="+" onClick={() => this.handleButton("+")}>
+                +
+              </button>
+              <button value="(" onClick={() => this.handleButton("(")}>
+                (
+              </button>
+              <button value="sin" onClick={() => this.handleButton("sin")}>
+                sin
+              </button>
+
+              <button value="4" onClick={() => this.handleButton("4")}>
+                4
+              </button>
+              <button value="5" onClick={() => this.handleButton("5")}>
+                5
+              </button>
+              <button value="6" onClick={() => this.handleButton("6")}>
+                6
+              </button>
+              <button value="-" onClick={() => this.handleButton("-")}>
+                -
+              </button>
+              <button value=")" onClick={() => this.handleButton(")")}>
+                )
+              </button>
+              <button value="cos" onClick={() => this.handleButton("cos")}>
+                cos
+              </button>
+
+              <button value="7" onClick={() => this.handleButton("7")}>
+                7
+              </button>
+              <button value="8" onClick={() => this.handleButton("8")}>
+                8
+              </button>
+              <button value="9" onClick={() => this.handleButton("9")}>
+                9
+              </button>
+              <button value="*" onClick={() => this.handleButton("*")}>
+                *
+              </button>
+              <button value="^" onClick={() => this.handleButton("^")}>
+                ^
+              </button>
+              <button value="tan" onClick={() => this.handleButton("tan")}>
+                tan
+              </button>
+
+              <button id="dot" value="." onClick={() => this.handleButton(".")}>
+                .
+              </button>
+              <button value="0" onClick={() => this.handleButton("0")}>
+                0
+              </button>
+              <button value="/" onClick={() => this.handleButton("/")}>
+                /
+              </button>
+              <button value="=" onClick={() => this.handleCalculator()}>
+                =
+              </button>
+              <button value="log" onClick={() => this.handleButton("log")}>
+                log
+              </button>
+              <button value="R" onClick={() => this.handleButton("R")}>
+                R
+              </button>
+              <button
+                className="clear"
+                value="clear"
+                onClick={() => this.setState({ calcText: "" })}
+              >
+                C
+              </button>
+            </div>
+          </div>
+          <History
+            calculates={this.state.historyText}
+            handleDelete={this.handleDelete}
+            // handleDeleteItem={this.handleDeleteItem}
+          />
+>>>>>>> 9a68dd705b9c6221f17737d6da928e863994ddad
         </div>
       </div>
     );

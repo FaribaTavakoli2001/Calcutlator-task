@@ -151,7 +151,7 @@ input:checked + .slider:before {
 
 .formstyle {
   width: 380px;
-  height: 400px;
+  height: 390px;
   margin-left: 20px;
   border: 3px solid skyblue;
   border-radius: 5px;
@@ -165,9 +165,12 @@ input:checked + .slider:before {
 justify-content:baseline;
 background-color: aliceblue;
 
+<<<<<<< HEAD
 } */
 
 
+=======
+>>>>>>> 9a68dd705b9c6221f17737d6da928e863994ddad
 button {
   width: 50px;
   height: 50px;
@@ -188,11 +191,19 @@ button {
   border-radius: 3px;
   padding: 20px;
   margin: auto;
+<<<<<<< HEAD
   margin-bottom: 4%;
+=======
+  margin-bottom: 3%;
+>>>>>>> 9a68dd705b9c6221f17737d6da928e863994ddad
 }
 
 .clear {
   background-color: rgb(250, 241, 110);
   width: 320px;
+<<<<<<< HEAD
   margin-top: 3%;
+=======
+  margin-top: 2%;
+>>>>>>> 9a68dd705b9c6221f17737d6da928e863994ddad
 }
