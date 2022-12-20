@@ -8,13 +8,13 @@ class Bar extends Component {
   render() {
     return (
       <div className="bar">
-        <form>
+        <div>
         <label className="switch">
           <input type="checkbox"  />
           <span className="slider round"></span>
         </label>
-        </form>
-        <h4> ماشین حساب مهندسی</h4>
+        </div>
+        <h4><b>ماشین حساب مهندسی</b></h4>
       </div>
       //  </div>
     );
