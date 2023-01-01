@@ -16,7 +16,6 @@ class Bar extends Component {
         </div>
         <h4><b>ماشین حساب مهندسی</b></h4>
       </div>
-      //  </div>
     );
   }
 }
