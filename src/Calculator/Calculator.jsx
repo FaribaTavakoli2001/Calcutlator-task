@@ -14,12 +14,7 @@ class Calculator extends Component {
     console.log(this.state, calcText);
   };
 
-  // handleDeleteItem = (c) => {
-  //   let historyText = this.state.historyText;
-  //   const index = historyText.findIndex((item) => item === c);
-  //   historyText.splice(index, 1);
-  //   this.setState({ historyText });
-  // };
+ 
 
   handleChange = ({ target }) => {
     // this.setState({ ...this.state, calcText: target.value });

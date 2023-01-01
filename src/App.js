@@ -10,7 +10,7 @@ class App extends React.Component {
   };
 
   handleCalculator = (text) => {
-    console.log( "321");
+    // console.log();
     this.setState({ calcText: "" });
     this.setState({
       ...this.state,
@@ -23,6 +23,13 @@ class App extends React.Component {
  this.setState( { historyItems : []});
   };
 
+   handleDeleteItem = (c) => {
+    let historyItems = this.state.historyItems;
+    const index = historyItems.findIndex((item) => item === c);
+    historyItems.splice(index, 1);
+    this.setState({ historyItems });
+  };
+
   render() {
     return (
       <div>
@@ -30,7 +37,9 @@ class App extends React.Component {
         <div className="container">
           <Calculator title="alaki" handleCalculator={this.handleCalculator} />
           <History calculates={this.state.historyItems}
-          handleDelete = {this.handleDelete} />
+          handleDelete = {this.handleDelete} 
+          handleDeleteItem = {this.handleDeleteItem}
+            />
         </div>
       </div>
     );

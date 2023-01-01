@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -53,7 +55,7 @@ h4{
 }
 
 .switch {
-  margin-left: 20%;
+  margin-left: 50%;
   /* margin-top: 0.01%; */
   /* margin-bottom: 40%; */
   position: relative;
@@ -147,7 +149,18 @@ input:checked + .slider:before {
   margin-bottom: 10px;
   background-color: white;
   padding: 4px;
+  display: flex;
+  justify-content: space-between ;
+
 }
+.material-symbols-outlined{
+  color: rgb(207, 53, 53);
+}
+
+/* .DeleteItem {
+  cursor: pointer;
+} */
+
 
 .formstyle {
   width: 380px;
