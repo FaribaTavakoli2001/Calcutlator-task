@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
-
 class Calculator extends Component {
   state = {
     Calculator: "Hi",
     calcText: "",
-    // historyText: [],
+    calcNumbers: "",
   };
 
   handleButton = (value) => {
@@ -14,7 +13,11 @@ class Calculator extends Component {
     console.log(this.state, calcText);
   };
 
- 
+  solve = () => {
+    let x = document.getElementById("calc").value;
+    let y = eval(x);
+    return y;
+  };
 
   handleChange = ({ target }) => {
     // this.setState({ ...this.state, calcText: target.value });
@@ -42,8 +45,12 @@ class Calculator extends Component {
               value={this.state.calcText}
               onChange={this.handleChange}
             />
-            <button value="1"onClick={() => this.handleButton("1")}>1</button>
-            <button value="2" onClick={() => this.handleButton("2")}>2</button>
+            <button value="1" onClick={() => this.handleButton("1")}>
+              1
+            </button>
+            <button value="2" onClick={() => this.handleButton("2")}>
+              2
+            </button>
             <button value="3" onClick={() => this.handleButton("3")}>
               3
             </button>
@@ -104,7 +111,10 @@ class Calculator extends Component {
             <button
               value="="
               onClick={() => {
-                this.props.handleCalculator(this.state.calcText)
+                const result = this.solve();
+                const screenText = this.state.calcText + '=' + result;
+                this.props.handleCalculator(screenText);
+                this.setState({ calcText: result });
               }}
             >
               =

@@ -1,23 +1,18 @@
-import React from 'react';
-
-
+import React from "react";
 
 const HistoryItem = ({ formula, onClick, handleDeleteItem }) => {
   const handleOnClick = () => {
-    onClick("DeleteItems");
+    onClick("");
   };
-  
-    return (
-      <div onClick={handleOnClick} className="history-item">
+
+  return (
+    <div onClick={handleOnClick} className="history-item">
       {formula}
-      {/* <div className='DeleteItem'  >
-      🗑️
-      </div> */}
-      <span className="material-symbols-outlined"  onClick={handleDeleteItem}>
-delete
-</span>
+      <span className="material-symbols-outlined" onClick={() => handleDeleteItem(formula)}>
+        delete
+      </span>
     </div>
   );
 };
 
-export default HistoryItem; 
+export default HistoryItem;

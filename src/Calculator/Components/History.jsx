@@ -8,6 +8,7 @@ export default class History extends Component {
 
   render() {
     const { calculates, handleDelete, handleDeleteItem } = this.props;
+    
 
     const handleOnItemClicked = (c) => {
       console.log("clicked", c);
@@ -33,13 +34,7 @@ export default class History extends Component {
           />
         ))}
 
-        {calculates.length === 0 ? (
-          <h5 className="NoHistory">
-            <b>تاریخچه ای وجود ندارد</b>
-          </h5>
-        ) : (
-          ""
-        )}
+        {calculates.length === 0 ? (<h5 className="NoHistory"><b>تاریخچه ای وجود ندارد</b></h5>) : ( "" ) }
       </div>
     );
   }

@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap'); 
 .container {
   display: flex;
   justify-content: space-between;
 }
 .space {
-  width: 290px;
+  width: 300px;
   height: 45px;
   /* border: 1px solid rgb(27, 23, 23); */
   border-radius: 3px;
@@ -15,6 +15,7 @@
   display: flex;
   font-size: medium;
   font-style: normal;
+  margin-top: 5%;
 }
 
 .delete {
@@ -24,11 +25,13 @@
   height: 40px;
   cursor: pointer;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Lalezar', cursive;
+
 }
 .NoHistory {
   color: rgb(207, 53, 53);
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Lalezar', cursive;
 }
 
 .bar {
@@ -44,14 +47,16 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-h4{
+h4 {
   margin-right: 10%;
   font-size: xx-large;
+  font-family: 'lalezar' , cursive;
 }
 .name {
   font-size: x-large;
   margin-bottom: 10%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: 'Lalezar', cursive;
 }
 
 .switch {
@@ -62,18 +67,15 @@ h4{
   display: inline-block;
   width: 60px;
   height: 34px;
-  
 }
 
 .switch input {
-  
   opacity: 0;
   width: 0;
   height: 0;
 }
 
 .slider {
-  
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -87,20 +89,19 @@ h4{
 }
 
 .slider:before {
-  
   position: absolute;
   content: "";
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: rgba(109, 52, 167, 0.781);
+  background-color: rgba(24, 22, 26, 0.781);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color:white;
+  background-color: white;
   background-image: url("./Calculator/Components/image/moon\ image.png");
   background-position: left;
 }
@@ -115,26 +116,20 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-
 .slider.round {
   border-radius: 34px;
   background-image: url("./Calculator/Components/image/sun\ images.png");
-  background-color:white;
+  background-color: white;
   background-position: right;
-  
-  
-  
 }
 
 .slider.round:before {
   border-radius: 50%;
- 
 }
-
-
 
 .history-container {
   background-color: #fafafa15;
+  background: #0dcaf014;
   width: 35%;
   max-width: 300px;
   height: 100vh;
@@ -147,27 +142,26 @@ input:checked + .slider:before {
   border-radius: 1px;
   box-shadow: 0 0 4px rgba(128, 128, 128, 0.575);
   margin-bottom: 10px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 4px;
   display: flex;
-  justify-content: space-between ;
-
+  justify-content: space-between;
 }
-.material-symbols-outlined{
+.material-symbols-outlined {
   color: rgb(207, 53, 53);
+  cursor: pointer;
 }
 
 /* .DeleteItem {
   cursor: pointer;
 } */
 
-
 .formstyle {
   width: 380px;
   height: 400px;
   margin-left: 20px;
   border: 3px solid skyblue;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 20px;
   margin: auto;
   margin-top: 7%;
@@ -179,7 +173,6 @@ justify-content:baseline;
 background-color: aliceblue;
 
 } */
-
 
 button {
   width: 50px;

@@ -9,24 +9,21 @@ class App extends React.Component {
     historyItems: [],
   };
 
-  handleCalculator = (text) => {
-    // console.log();
-    this.setState({ calcText: "" });
+  handleCalculator = (result) => { 
     this.setState({
       ...this.state,
-      historyItems: [...this.state.historyItems,text],
-    })
-
+      historyItems: [...this.state.historyItems, result],
+    });
   };
 
-  handleDelete = ( ) => {
- this.setState( { historyItems : []});
+  handleDelete = () => {
+    this.setState({ historyItems: [] });
   };
 
-   handleDeleteItem = (c) => {
+  handleDeleteItem = (c) => {
     let historyItems = this.state.historyItems;
     const index = historyItems.findIndex((item) => item === c);
-    historyItems.splice(index, 1);
+    historyItems.splice(index , 1);
     this.setState({ historyItems });
   };
 
@@ -35,11 +32,15 @@ class App extends React.Component {
       <div>
         <Bar />
         <div className="container">
-          <Calculator title="alaki" handleCalculator={this.handleCalculator} />
-          <History calculates={this.state.historyItems}
-          handleDelete = {this.handleDelete} 
-          handleDeleteItem = {this.handleDeleteItem}
-            />
+          <Calculator 
+          title="alaki" 
+          handleCalculator={this.handleCalculator}
+           />
+          <History
+            calculates={this.state.historyItems}
+            handleDelete={this.handleDelete}
+            handleDeleteItem={this.handleDeleteItem}
+          />
         </div>
       </div>
     );
